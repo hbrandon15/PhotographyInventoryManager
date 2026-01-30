@@ -1,10 +1,16 @@
-﻿using System;
-
-public class Equipment
+﻿public class Equipment
 {
-	public Equipment()
-	{
-		Console.WriteLine("Equipment created.");
+    // Properties of the Equipment class
+    public string Type { get; set; }
+    public string Name { get; set; }
+    public string Manufacturer { get; set; }
+    public string Description { get; set; }
+    public int Quantity { get; set; }
+    public string Location { get; set; }
+
+    public Equipment() // Constructor
+    {
+        Console.WriteLine("Equipment created.");
 
     }
 }
