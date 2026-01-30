@@ -1,4 +1,6 @@
-﻿public class Equipment
+﻿// TODO: Setup JSON serialization for the Equipment class
+// TODO: Add ID property to Equipment class
+public class Equipment
 {
     // Properties of the Equipment class
     public string Type { get; set; }
