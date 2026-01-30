@@ -11,6 +11,12 @@
     public Equipment() // Constructor
     {
         Console.WriteLine("Equipment created.");
+        Type = "Generic Equipment";
+        Name = "Unnamed Equipment";
+        Manufacturer = "Unknown Manufacturer";
+        Description = "No description available.";
+        Quantity = 0;
+        Location = "Unspecified Location";
 
     }
 }
