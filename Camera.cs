@@ -1,5 +1,4 @@
-﻿
-public class Camera : Equipment
+﻿public class Camera : Equipment
 {
 
     public Camera() // Constructor
