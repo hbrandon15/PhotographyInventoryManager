@@ -1,7 +1,4 @@
-﻿// TODO: Setup JSON serialization for the Equipment class
-// TODO: Add ID property to Equipment class
-using System;
-using System.Text.Json.Serialization;
+﻿using System;
 
 public class Equipment
 {
