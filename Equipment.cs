@@ -1,5 +1,5 @@
-﻿// TODO: Setup JSON serialization for the Equipment class
-// TODO: Add ID property to Equipment class
+﻿using System;
+
 public class Equipment
 {
     // Properties of the Equipment class
@@ -9,6 +9,7 @@ public class Equipment
     public string Description { get; set; }
     public int Quantity { get; set; }
     public string Location { get; set; }
+    public int ID { get; set; } // Unique identifier for the equipment
 
     public Equipment() // Constructor
     {
