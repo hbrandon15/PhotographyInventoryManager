@@ -45,8 +45,8 @@
 
     public void viewEquipment()
     {
-        Console.WriteLine("Viewing equipment details...");
-        // Implementation for viewing equipment details
+        Console.WriteLine("Viewing equipment details...\n");
+        Console.WriteLine($"ID: {ID}");
         Console.WriteLine($"Type: {Type}");
         Console.WriteLine($"Name: {Name}");
         Console.WriteLine($"Manufacturer: {Manufacturer}");
