@@ -1,4 +1,5 @@
-﻿class Program
+﻿using System.Text.Json;
+class Program
 {
     static void Main(string[] args)
     {
@@ -19,8 +20,8 @@
 
 
 
-        //string jsonString = JsonSerializer.Serialize(equipment);
-        //Console.WriteLine(jsonString);
+        string jsonString = JsonSerializer.Serialize(equipmentList);
+        Console.WriteLine(jsonString);
 
     }
 }
