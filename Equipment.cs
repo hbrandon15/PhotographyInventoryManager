@@ -1,14 +1,15 @@
 ﻿public class Equipment
 {
     // Properties of the Equipment class
+    public int ID { get; set; }
+    private static int _nextID = 1;
     public string Type { get; set; }
     public string Name { get; set; }
     public string Manufacturer { get; set; }
     public string Description { get; set; }
     public int Quantity { get; set; }
     public string Location { get; set; }
-    public int ID { get; set; }
-    private static int _nextID = 1;
+
 
     public Equipment() // Constructor
     {
@@ -25,10 +26,6 @@
 
     public void createEquipment()
     {
-        // Implementation for creating equipment
-        Console.WriteLine("Creating equipment...");
-        Console.WriteLine("What type of equipment do you want to add?");
-        Type = Console.ReadLine();
         Console.WriteLine("What is the name of the equipment?");
         Name = Console.ReadLine();
         Console.WriteLine("Who is the manufacturer of the equipment?");
