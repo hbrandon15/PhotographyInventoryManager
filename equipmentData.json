@@ -1,1 +1,1 @@
-[{"Type":"Camera","Name":"A7IV","Manufacturer":"Sony","Description":"Hybrid photo \u0026 video camera","Quantity":2,"Location":"Office","ID":1},{"Type":"Generic Equipment","Name":"Unnamed Equipment","Manufacturer":"Unknown Manufacturer","Description":"No description available.","Quantity":0,"Location":"Unspecified Location","ID":2}]
+[{"ID":1,"Type":"Camera","Name":"A7IV","Manufacturer":"Sony","Description":"camera","Quantity":1,"Location":"home"},{"ID":2,"Type":"Lens","Name":"24-70 GM","Manufacturer":"Sony","Description":"Zoom lens","Quantity":1,"Location":"home"}]

@@ -6,10 +6,11 @@
 
     public Lens() // Constructor
     {
-        Console.WriteLine("Lens created.");
+        Type = "Lens";
         FocalLength = "Unknown";
         LowestAperture = "Unknown";
         MountType = "Unknown";
+        CreateLens();
     }
 
     public void CreateLens()

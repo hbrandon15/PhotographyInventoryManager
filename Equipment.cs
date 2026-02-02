@@ -37,7 +37,7 @@
         Quantity = intTemp;
         Console.WriteLine("Where is the equipment located?");
         Location = Console.ReadLine();
-        Console.WriteLine("Equipment created.\n");
+        Console.WriteLine($"{Type} created successfully!\n");
     }
 
     public void viewEquipment()
