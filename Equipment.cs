@@ -7,10 +7,13 @@
     public string Description { get; set; }
     public int Quantity { get; set; }
     public string Location { get; set; }
-    public int ID { get; set; } // Unique identifier for the equipment
+    public int ID { get; set; }
+    private static int _nextID = 1;
 
     public Equipment() // Constructor
     {
+        ID = _nextID;
+        _nextID++;
         Type = "Generic Equipment";
         Name = "Unnamed Equipment";
         Manufacturer = "Unknown Manufacturer";
@@ -37,13 +40,13 @@
         Quantity = intTemp;
         Console.WriteLine("Where is the equipment located?");
         Location = Console.ReadLine();
-        Console.WriteLine("Equipment created.");
+        Console.WriteLine("Equipment created.\n");
     }
 
     public void viewEquipment()
     {
-        Console.WriteLine("Viewing equipment details...");
-        // Implementation for viewing equipment details
+        Console.WriteLine("Viewing equipment details...\n");
+        Console.WriteLine($"ID: {ID}");
         Console.WriteLine($"Type: {Type}");
         Console.WriteLine($"Name: {Name}");
         Console.WriteLine($"Manufacturer: {Manufacturer}");
