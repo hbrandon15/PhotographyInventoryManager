@@ -11,7 +11,6 @@
 
     public Equipment() // Constructor
     {
-        Console.WriteLine("Equipment created.");
         Type = "Generic Equipment";
         Name = "Unnamed Equipment";
         Manufacturer = "Unknown Manufacturer";
@@ -23,20 +22,33 @@
 
     public void createEquipment()
     {
-        Console.WriteLine("Creating equipment...");
         // Implementation for creating equipment
+        Console.WriteLine("Creating equipment...");
         Console.WriteLine("What type of equipment do you want to add?");
-        var Type = Console.ReadLine();
+        Type = Console.ReadLine();
         Console.WriteLine("What is the name of the equipment?");
-        var Name = Console.ReadLine();
+        Name = Console.ReadLine();
         Console.WriteLine("Who is the manufacturer of the equipment?");
-        var Manufacturer = Console.ReadLine();
+        Manufacturer = Console.ReadLine();
         Console.WriteLine("Provide a brief description of the equipment:");
-        var Description = Console.ReadLine();
+        Description = Console.ReadLine();
         Console.WriteLine("How many units of this equipment are available?");
-        var QuantityInput = Console.ReadLine();
+        int intTemp = Convert.ToInt32(Console.ReadLine());
+        Quantity = intTemp;
         Console.WriteLine("Where is the equipment located?");
-        var Location = Console.ReadLine();
+        Location = Console.ReadLine();
         Console.WriteLine("Equipment created.");
+    }
+
+    public void viewEquipment()
+    {
+        Console.WriteLine("Viewing equipment details...");
+        // Implementation for viewing equipment details
+        Console.WriteLine($"Type: {Type}");
+        Console.WriteLine($"Name: {Name}");
+        Console.WriteLine($"Manufacturer: {Manufacturer}");
+        Console.WriteLine($"Description: {Description}");
+        Console.WriteLine($"Quantity: {Quantity}");
+        Console.WriteLine($"Location: {Location}");
     }
 }
