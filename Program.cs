@@ -18,8 +18,12 @@ class Program
         //    equipment.viewEquipment();
         //}
 
+        string fileName = "equipmentData.json";
         string jsonString = JsonSerializer.Serialize(equipmentList);
-        Console.WriteLine(jsonString);
+        File.WriteAllText(fileName, jsonString);
+
+        Console.WriteLine(File.ReadAllText(fileName));
+
 
     }
 }
