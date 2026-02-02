@@ -3,6 +3,8 @@
 
     public Camera() // Constructor
     {
+        Type = "Camera";
+        CreateCamera();
 
 
     }
