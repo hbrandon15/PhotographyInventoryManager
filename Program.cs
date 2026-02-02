@@ -3,8 +3,6 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello, World!");
-
         //var equipment1 = new Equipment();
         //equipment1.createEquipment();
         //equipment1.viewEquipment();
@@ -12,13 +10,13 @@ class Program
         var camera1 = new Camera();
         camera1.CreateCamera();
         equipmentList.Add(camera1);
+        var equipment2 = new Equipment();
+        equipmentList.Add(equipment2);
 
-        foreach (var equipment in equipmentList)
-        {
-            equipment.viewEquipment();
-        }
-
-
+        //foreach (var equipment in equipmentList)
+        //{
+        //    equipment.viewEquipment();
+        //}
 
         string jsonString = JsonSerializer.Serialize(equipmentList);
         Console.WriteLine(jsonString);

@@ -3,7 +3,7 @@
 
     public Camera() // Constructor
     {
-        Console.WriteLine("Camera created.");
+
 
     }
 
