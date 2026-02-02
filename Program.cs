@@ -18,7 +18,7 @@ class Program
         //    equipment.viewEquipment();
         //}
 
-        string fileName = "equipmentData.json";
+        string fileName = Path.Combine(AppContext.BaseDirectory, "..", "..", "..", "equipmentData.json");
         string jsonString = JsonSerializer.Serialize(equipmentList);
         File.WriteAllText(fileName, jsonString);
 
