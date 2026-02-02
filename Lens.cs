@@ -7,6 +7,9 @@
     public Lens() // Constructor
     {
         Console.WriteLine("Lens created.");
+        FocalLength = "Unknown";
+        LowestAperture = "Unknown";
+        MountType = "Unknown";
     }
 }
 
