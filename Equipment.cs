@@ -1,6 +1,4 @@
-﻿using System;
-
-public class Equipment
+﻿public class Equipment
 {
     // Properties of the Equipment class
     public string Type { get; set; }
@@ -21,5 +19,24 @@ public class Equipment
         Quantity = 0;
         Location = "Unspecified Location";
 
+    }
+
+    public void createEquipment()
+    {
+        Console.WriteLine("Creating equipment...");
+        // Implementation for creating equipment
+        Console.WriteLine("What type of equipment do you want to add?");
+        var Type = Console.ReadLine();
+        Console.WriteLine("What is the name of the equipment?");
+        var Name = Console.ReadLine();
+        Console.WriteLine("Who is the manufacturer of the equipment?");
+        var Manufacturer = Console.ReadLine();
+        Console.WriteLine("Provide a brief description of the equipment:");
+        var Description = Console.ReadLine();
+        Console.WriteLine("How many units of this equipment are available?");
+        var QuantityInput = Console.ReadLine();
+        Console.WriteLine("Where is the equipment located?");
+        var Location = Console.ReadLine();
+        Console.WriteLine("Equipment created.");
     }
 }
